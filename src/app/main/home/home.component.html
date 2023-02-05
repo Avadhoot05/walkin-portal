@@ -1,0 +1,55 @@
+<div class="mb-4 mx-5">
+    <div class="d-flex justify-content-center align-items-center tabs rounded">
+        <div class="
+                    col
+                    d-flex
+                    align-items-center
+                    justify-content-center
+                    gap-1
+                    text-center
+                    px-0
+                    mx-0
+                    tab-active
+                    p-1
+                ">
+            <img src="../../../assets/icons/courses.svg" alt="Courses" />
+            <strong class="nav-tab-figure">4</strong>
+            <p class="d-inline" style="font-weight: 600">Courses</p>
+        </div>
+        <div class="
+                    col
+                    d-flex
+                    align-items-center
+                    justify-content-center
+                    gap-1
+                    text-center
+                    px-0
+                    mx-0
+                    p-1
+                ">
+            <img src="../../../assets/icons/classes.svg" alt="Courses" />
+            <strong class="nav-tab-figure">4</strong>
+            <p class="d-inline" style="font-weight: 600">Classes</p>
+        </div>
+    </div>
+</div>
+
+<div class="mb-2 sorting-part mx-5">
+    <div class="d-flex justify-content-between align-items-center">
+        <p>Showing 4 of 4 courses</p>
+        <div class="d-flex gap-3 align-items-center gap-1">
+            <label for="sort-by" style="margin: 0;">Sort By: </label>
+            <select id="sort-by" class="form-control custom-select" style="width: 200px; margin: 0">
+                <option>Course Name</option>
+                <option>Date</option>
+                <option>Content Size</option>
+            </select>
+            <img src="../../../assets/icons/sort.svg" alt="Sort Ascending" />
+        </div>
+    </div>
+    <hr />
+</div>
+
+<div class="articles" id="articles">
+    <app-course *ngFor="let course of courses" [course]="course"></app-course>
+</div>

@@ -1,0 +1,361 @@
+<nav>
+    <div class="brand-logo">
+        <a href="#">
+            <img src="../../../assets/icons/logo-used-in-header.svg" width="140" height="40" alt="" />
+        </a>
+    </div>
+
+    <ng-container *ngIf='isLoggedIn' [ngTemplateOutlet]="navbar"></ng-container> 
+
+    <ng-template #navbar>
+        <ul class="horizontal-nav">
+            <li>
+                <a class="nav-active" href="#">Dashboard</a>
+            </li>
+            <li>
+                <a href="#">Content</a>
+            </li>
+            <li>
+                <a href="#">Users</a>
+            </li>
+            <li>
+                <a href="#">Reports</a>
+            </li>
+            <li>
+                <a href="#">Admin</a>
+            </li>
+        </ul>
+
+        <ul class="notification-container">
+            <li class="notifications-link">
+                <a href="#">
+                    <span class="notifications">4</span>
+                    <img class="notification-icon-img" src="../../../assets/icons/alerts.svg" alt="" />
+
+                    <div class="notifications-pop-up">
+                        <div class="notifications-content-container">
+                            <div class="d-flex flex-column n-unread">
+                                <div class="
+                                            d-flex
+                                            justify-content-between
+                                            gap-1
+                                        ">
+                                    <h4 class="n-heading">
+                                        License for Introduction to
+                                        Algebra has been assigned to
+                                        your school
+                                    </h4>
+                                    <img src="../../../assets/icons/remove.svg" alt="" class="remove-icon" />
+                                </div>
+                                <p class="dateline">
+                                    15-Sep-2018 at 07:21 pm
+                                </p>
+                            </div>
+                            <div class="d-flex flex-column n-read">
+                                <div class="
+                                            d-flex
+                                            justify-content-between
+                                            gap-1
+                                        ">
+                                    <h4 class="n-heading">
+                                        Lesson 3 Practice Worksheet
+                                        overdue for Amy Santiago
+                                    </h4>
+                                    <img src="../../../assets/icons/done.svg" alt="" class="remove-icon" />
+                                </div>
+                                <p>
+                                    Course:
+                                    <strong>Advanced Mathematics</strong>
+                                </p>
+                                <p class="dateline">
+                                    15-Sep-2018 at 07:21 pm
+                                </p>
+                            </div>
+                            <div class="d-flex flex-column n-unread">
+                                <div class="
+                                            d-flex
+                                            justify-content-between
+                                            gap-1
+                                        ">
+                                    <h4 class="n-heading">
+                                        23 new students created
+                                    </h4>
+                                    <img src="../../../assets/icons/remove.svg" alt="" class="remove-icon" />
+                                </div>
+                                <p class="dateline">
+                                    14-Sep-2018 at 01:21 pm
+                                </p>
+                            </div>
+                            <div class="d-flex flex-column n-unread">
+                                <div class="
+                                            d-flex
+                                            justify-content-between
+                                            gap-1
+                                        ">
+                                    <h4 class="n-heading">
+                                        15 submissions ready for
+                                        evaluation
+                                    </h4>
+                                    <img src="../../../assets/icons/remove.svg" alt="" class="remove-icon" />
+                                </div>
+                                <p>
+                                    Class:
+                                    <strong>Basics of Algebra</strong>
+                                </p>
+                                <p class="dateline">
+                                    13-Sep-2018 at 01:15 pm
+                                </p>
+                            </div>
+                            <div class="d-flex flex-column n-unread">
+                                <div class="
+                                            d-flex
+                                            justify-content-between
+                                            gap-1
+                                        ">
+                                    <h4 class="n-heading">
+                                        License for Basic Concepts in
+                                        Geometry has been assigned to
+                                        your... school
+                                    </h4>
+                                    <img src="../../../assets/icons/remove.svg" alt="" class="remove-icon" />
+                                </div>
+                                <p></p>
+                                <p class="dateline">
+                                    15-Sep-2018 at 07:21 pm
+                                </p>
+                            </div>
+                            <div class="d-flex flex-column n-read">
+                                <div class="
+                                            d-flex
+                                            justify-content-between
+                                            gap-1
+                                        ">
+                                    <h4 class="n-heading">
+                                        Lesson 3 Practice Worksheet
+                                        overdue for Sam Diego
+                                    </h4>
+                                    <img src="../../../assets/icons/done.svg" alt="" class="remove-icon" />
+                                </div>
+                                <p>
+                                    Course:
+                                    <strong>Advanced Mathematics</strong>
+                                </p>
+                                <p class="dateline"></p>
+                            </div>
+                        </div>
+                        <button class="show-all-btn">SHOW ALL</button>
+                    </div>
+                </a>
+            </li>
+            <li class="alert-link">
+                <a href="#">
+                    <span class="notifications">3</span>
+                    <img src="../../../assets/icons/announcements.svg" class="notification-icon-img" alt="" />
+                </a>
+
+                <div class="alerts-pop-up">
+                    <div class="alerts-content-container">
+                        <div class="d-flex flex-column n-read">
+                            <div class="
+                                        d-flex
+                                        justify-content-between
+                                        gap-1
+                                    ">
+                                <p>PA: <strong>Wilson Kumar</strong></p>
+                                <img src="../../../assets/icons/done.svg" alt="" class="remove-icon" />
+                            </div>
+                            <h4 class="n-heading">
+                                No classes will be held on 21st Nov
+                            </h4>
+
+                            <div class="d-flex align-items-center">
+                                <img src="../../../assets/icons/attachment.svg" height="12px" alt="Attachment" />
+                                <p>2 files are attached</p>
+                                <p class="dateline">
+                                    15-Sep-2018 at 07:21 pm
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column n-unread">
+                            <div class="
+                                        d-flex
+                                        justify-content-between
+                                        gap-1
+                                    ">
+                                <p>PA: <strong>Wilson Kumar</strong></p>
+                                <img src="../../../assets/icons/remove.svg" alt="" class="remove-icon" />
+                            </div>
+                            <h4 class="n-heading">
+                                Guest lecture on Geometry on 20th
+                                September
+                            </h4>
+
+                            <div class="d-flex align-items-center">
+                                <img src="../../../assets/icons/attachment.svg" height="12px" alt="Attachment" />
+                                <p>2 files are attached</p>
+                                <p class="dateline">
+                                    15-Sep-2018 at 07:21 pm
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column n-read">
+                            <div class="
+                                        d-flex
+                                        justify-content-between
+                                        gap-1
+                                    ">
+                                <p>PA: <strong>Samson White</strong></p>
+                                <img src="../../../assets/icons/done.svg" alt="" class="remove-icon" />
+                            </div>
+                            <h4 class="n-heading">
+                                Additional course materials available on
+                                request
+                            </h4>
+                            <p>Course: Mathematics 101</p>
+                            <p class="dateline">
+                                15-Sep-2018 at 07:21 pm
+                            </p>
+                        </div>
+
+                        <div class="d-flex flex-column n-unread">
+                            <div class="
+                                        d-flex
+                                        justify-content-between
+                                        gap-1
+                                    ">
+                                <p>PA: <strong>Wilson Kumar</strong></p>
+                                <img src="../../../assets/icons/remove.svg" alt="" class="remove-icon" />
+                            </div>
+                            <h4 class="n-heading">
+                                Guest lecture on Geometry on 20th
+                                September
+                            </h4>
+
+                            <div class="d-flex align-items-center">
+                                <img src="../../../assets/icons/attachment.svg" height="12px" alt="Attachment" />
+                                <p>2 files are attached</p>
+                                <p class="dateline">
+                                    15-Sep-2018 at 07:21 pm
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column n-read">
+                            <div class="
+                                        d-flex
+                                        justify-content-between
+                                        gap-1
+                                    ">
+                                <p>PA: <strong>Samson White</strong></p>
+                                <img src="../../../assets/icons/done.svg" alt="" class="remove-icon" />
+                            </div>
+                            <h4 class="n-heading">
+                                No classes will be held on 25th Dec
+                            </h4>
+                            <p class="dateline">
+                                15-Sep-2018 at 07:21 pm
+                            </p>
+                        </div>
+
+                        <div class="d-flex flex-column n-unread">
+                            <div class="
+                                        d-flex
+                                        justify-content-between
+                                        gap-1
+                                    ">
+                                <p>PA: <strong>Wilson Kumar</strong></p>
+                                <img src="../../../assets/icons/remove.svg" alt="" class="remove-icon" />
+                            </div>
+                            <h4 class="n-heading">
+                                Additional course materials available on
+                                request
+                            </h4>
+                            <p>Course: Mathematics 101</p>
+                            <p class="dateline">
+                                15-Sep-2018 at 07:21 pm
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex show-all-btn">
+                        <button class="borderless-buttons">
+                            SHOW ALL
+                        </button>
+                        <div style="
+                                    border: 0.2px solid rgb(200, 200, 200);
+                                "></div>
+                        <button class="borderless-buttons">
+                            CREATE NEW
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="avatar">
+                    <span class="notifications dp-notification">T</span>
+                    <img src="../../../assets/images/mypic.jpg" alt="" />
+                </a>
+            </li>
+        </ul>
+        <div class="menu">
+            <a class="hamburger" id="hamburger" href="#">
+                <img src="../../../assets/icons/menu.svg" style="
+                            filter: invert(86%) sepia(5%) saturate(4108%)
+                                hue-rotate(68deg) brightness(119%)
+                                contrast(72%);
+                        " width="30" height="30" alt="" style="padding-bottom: 0.6rem" />
+            </a>
+
+            <div class="verticle-menu-container" id="verticle-menu">
+                <ul class="nav-menu-verticle">
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+
+                    <li class="expandable-menu">
+                        <a href="#">content</a>
+
+                        <img src="../../../assets/icons/expand.svg" class="nav-v-expand" alt="Expand" />
+                        <ul class="nav-sub-menu-verticle">
+                            <li>
+                                <a href="#">Course Catalog</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="expandable-menu">
+                        <a href="#">users</a>
+                        <img src="../../../assets/icons/expand.svg" class="nav-v-expand" alt="Expand" />
+                        <ul class="nav-sub-menu-verticle">
+                            <li>
+                                <a href="#">Course Catalog</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="expandable-menu">
+                        <a href="#">reports</a>
+                        <img src="../../../assets/icons/expand.svg" class="nav-v-expand" alt="Expand" />
+                        <ul class="nav-sub-menu-verticle">
+                            <li>
+                                <a href="#">Course Catalog</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="expandable-menu">
+                        <a href="#">admin</a>
+                        <img src="../../../assets/icons/expand.svg" class="nav-v-expand" alt="Expand" />
+                        <ul class="nav-sub-menu-verticle">
+                            <li>
+                                <a href="#">Course Catalog</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </ng-template>
+
+</nav>
